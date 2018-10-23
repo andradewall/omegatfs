@@ -15,14 +15,6 @@
          
          $this->view('pages/index', $data);
       }
-
-      public function about($id){
-         $data = [
-            'title' => 'About Us'
-         ];
-         
-         $this->view('pages/about', $data);
-      }
    }
 
 ?>
