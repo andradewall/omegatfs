@@ -6,14 +6,26 @@
       }
 
       public function index(){
-         $posts = $this->postModel->getPosts();
+         if (isLoggedIn()){
+            redirect('posts');
+         }
 
          $data = [
-            'title' => 'Welcome',
-            'posts' => $posts
+            'title' => 'Hermes',
+            'description' => 'Simple social network built on the OmegaTFS PHP framework'
          ];
          
          $this->view('pages/index', $data);
+      }
+
+      public function about(){
+
+         $data = [
+            'title' => 'About Us',
+            'description' => 'App to share post with other users'
+         ];
+
+         $this->view('pages/about', $data);
       }
    }
 

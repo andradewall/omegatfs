@@ -1,0 +1,12 @@
+{
+    "name": "wallace/hermes",
+    "description": "Simple social network built on the OmegaTFS PHP framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Wallace Andrade",
+            "email": "andradewall0@gmail.com"
+        }
+    ],
+    "require": {}
+}

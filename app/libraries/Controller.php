@@ -23,5 +23,6 @@
             die('View '.$view.' does not exist.');
          }
       }
+
    }
 ?>
